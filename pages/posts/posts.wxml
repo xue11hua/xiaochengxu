@@ -1,0 +1,22 @@
+<!-- 引入模版 -->
+<import src="post-item/post_template.wxml" />
+
+<view>
+  <swiper vertical='{{false}}' indicator-dots='true' autoplay='5000'>
+    <swiper-item>
+      <image src='/images/banner.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/banner1.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/banner2.jpg'></image>
+    </swiper-item>
+  </swiper>
+  <block wx:for="{{post_key}}" wx:for-item="item" wx:for-index="idx" wx:key="idx">
+  <!-- 使用模版 -->
+    <view catchtap='onpost' data-postid='{{item.postid}}'>
+      <template is="postitem" data='{{...item}}' />
+    </view>
+  </block>
+</view>

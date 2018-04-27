@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/wekcone/index/index",
+    "pages/posts/posts",
+    "pages/posts/post-detal/post-detal"
+   
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#b3d",
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}

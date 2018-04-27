@@ -1,0 +1,10 @@
+
+<view class='container'>
+  <image class='user' src='/images/tou.jpg'></image>
+  <text class='name'>你好我</text>
+  <view class='moto' catchtap="ontap">
+      <text class='namea'>开始</text>
+  </view>
+</view>
+<!-- bindtap事件会冒泡 -->
+<!-- catchtap事件不会冒泡 -->

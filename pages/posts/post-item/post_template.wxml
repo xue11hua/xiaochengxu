@@ -1,0 +1,17 @@
+<template name="postitem">
+  <view class='post'>
+      <view class='post-a'>
+        <image wx:if="{{post_img}}" class='post-img' src='{{post_img}}'></image>
+        <text class='post-dede'>{{idx+1}}{{date}}</text>
+      </view>
+      <text class='post-title'>{{title}}</text>
+      <image class='post-imga' src='{{post_imga}}'></image>
+      <text class='post-con'>{{con}}</text>
+      <view>
+        <text class='post-live'>点赞</text>
+        <text class='post-live'>{{num_d}}</text>
+        <text class='post-live'>浏览</text>
+        <text class='post-live'>{{num_v}}</text>
+      </view>
+    </view>
+</template>
