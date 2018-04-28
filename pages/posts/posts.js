@@ -24,7 +24,7 @@ Page({
    var postid=event.currentTarget.dataset.postid;//获取postid
    console.log(postid);
    wx.navigateTo({
-     url: 'post-detal/post-detal',
+     url: 'post-detal/post-detal?id=' + postid,//传参
    })
  }
 })

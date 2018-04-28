@@ -1,8 +1,10 @@
 {
   "pages": [
+    
     "pages/wekcone/index/index",
     "pages/posts/posts",
-    "pages/posts/post-detal/post-detal"
+    "pages/posts/post-detal/post-detal",
+    "pages/moves/moves"
    
   ],
   "window": {
@@ -12,5 +14,23 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/moves/moves",
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "images/tab/dianying_hl.png",
+        "text": "电影"
+      },
+      {
+        "pagePath": "pages/posts/posts",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png",
+        "text": "阅读"
+      }
+    ]
   }
 }

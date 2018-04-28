@@ -1,0 +1,18 @@
+.neirong image{
+width: 100%;
+}
+.title{
+  font-size: 30rpx;
+  margin:0 10px;
+}
+.neirong-fx{
+  line-height: 40rpx;
+}
+.neirong-fx text{
+  margin:0 10px;
+  font-size: 28rpx;
+}
+.neirong-xiangq{
+  margin:0 10px;
+  font-size: 30rpx;
+}

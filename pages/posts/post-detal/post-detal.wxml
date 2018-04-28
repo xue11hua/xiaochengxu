@@ -1,3 +1,13 @@
-<text>
-  详情
-</text>
+<view class='neirong'>
+    <image src='{{inplay?postdata.coverImg:postdata.post_imga}}'></image>
+    <text class='title'>{{postdata.title}}</text>
+    <view class='neirong-fx'>
+        <text catchtap='onsctap' wx:if="{{collected}}">收藏</text>
+        <text catchtap='onsctap' wx:else>未藏</text>
+        <text catchtap='onfxtap'>分享</text>
+         <text catchtap='onbftap'>{{inplay?'暂停':'播放'}}</text>
+    </view>
+    <view class='neirong-xiangq'>
+      <text>{{postdata.xiangqiang}}</text>
+    </view>
+</view>
