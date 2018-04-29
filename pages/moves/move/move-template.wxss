@@ -1,0 +1,18 @@
+.m_a .m_b{
+width:200rpx;
+
+font-size: 30rpx;
+}
+.m_a image{
+  width:200rpx;
+  height: 200rpx;
+}
+.m_a{
+  width: 200rpx;
+  float: left;
+  margin:0 25.6rpx;
+}
+.m_a .m_b .m_text{
+  height: 50rpx;
+  line-height: 50rpx;
+}

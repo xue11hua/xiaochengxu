@@ -1,10 +1,10 @@
 {
   "pages": [
-    
+    "pages/moves/moves",
     "pages/wekcone/index/index",
     "pages/posts/posts",
-    "pages/posts/post-detal/post-detal",
-    "pages/moves/moves"
+    "pages/posts/post-detal/post-detal"
+   
    
   ],
   "window": {

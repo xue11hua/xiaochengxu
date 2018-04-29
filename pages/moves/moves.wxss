@@ -1,0 +1,3 @@
+@import "stars/stars.wxss";
+@import "move-list/move-list-template.wxss";
+@import "move/move-template.wxss";

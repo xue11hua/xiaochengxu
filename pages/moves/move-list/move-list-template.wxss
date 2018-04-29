@@ -1,0 +1,17 @@
+.movelist_b{
+   float: right;
+}
+.movelist_c{
+ font-size: 30rpx;
+ height: 70rpx;
+ line-height: 70rpx;
+ text-indent: 5px;
+}
+.movelist_b .movelist_img{
+  width: 20rpx;
+  height: 20rpx;
+  margin:0 5px 0 5px;
+}
+.movelist{
+  clear: both
+}

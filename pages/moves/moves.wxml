@@ -1,1 +1,36 @@
-<text>11111</text>
+
+<view>
+   <view class='movelist'>
+      <view class='movelist_c'>
+        <text class='movelist_a'>top</text> 
+        <view class='movelist_b'>
+          <text>更多</text>
+          <image class='movelist_img' src='../../../images/icon/arrow-right.png'></image>
+        </view>
+      </view>
+      <block wx:for="{{post_key}}" wx:for-item="top" wx:for-index="idx" wx:key="idx">
+      
+        <!-- 列表内容 -->
+      <view class='m_a'>
+          <view class='m_b'>
+              <image class='m_img' src='{{top.images.large}}'></image>
+              <text class='m_text'>{{top.title}}</text>
+          </view>
+          <!-- 列表内容 -->
+
+          <!-- 星星 -->
+           <view class="stars-container">
+            <view class="stars">
+                <image class='stars-img' src='/images/icon/star.png'></image>
+                <image class='stars-img' src='/images/icon/star.png'></image>
+                <image class='stars-img' src='/images/icon/star.png'></image>
+            </view>
+            <text class="star-score">{{top.rating.average}}</text>
+          </view> 
+            <!-- 星星 -->
+
+        </view>
+        </block>
+   
+    </view>
+</view>
