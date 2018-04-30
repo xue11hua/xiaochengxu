@@ -1,0 +1,6 @@
+@import "../move/move-template.wxss";
+@import "../stars/stars.wxss";
+.movegd{
+  margin-top: 20rpx;
+  height: 1300rpx;
+}

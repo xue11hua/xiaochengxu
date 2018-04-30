@@ -1,36 +1,33 @@
-
+<import src='move/move-template.wxml' />
+<import src='movelist/movelist-template.wxml' />
 <view>
-   <view class='movelist'>
-      <view class='movelist_c'>
-        <text class='movelist_a'>top</text> 
-        <view class='movelist_b'>
-          <text>更多</text>
-          <image class='movelist_img' src='../../../images/icon/arrow-right.png'></image>
-        </view>
+      <view class="search">
+        <icon class="search-img" type='search' size='13' color='#405f80'></icon>
+        <input placeholder="血战钢锯岭、你的名字"  type='text'  placeholder-class="placeholder" bindfocus="onBindFocus"  bindconfirm="onBindChan" />
+        <image wx:if="{{!conshow}}" src="/images/icon/xx.png" class="xx-img" catchtap="onBindBlur"></image>
       </view>
-      <block wx:for="{{post_key}}" wx:for-item="top" wx:for-index="idx" wx:key="idx">
-      
-        <!-- 列表内容 -->
-      <view class='m_a'>
-          <view class='m_b'>
-              <image class='m_img' src='{{top.images.large}}'></image>
-              <text class='m_text'>{{top.title}}</text>
-          </view>
-          <!-- 列表内容 -->
+      <view wx:if="{{conshow}}">
+      <template is="movelist" data='{{itm:post_key}}' />
 
-          <!-- 星星 -->
-           <view class="stars-container">
-            <view class="stars">
-                <image class='stars-img' src='/images/icon/star.png'></image>
-                <image class='stars-img' src='/images/icon/star.png'></image>
-                <image class='stars-img' src='/images/icon/star.png'></image>
-            </view>
-            <text class="star-score">{{top.rating.average}}</text>
-          </view> 
-            <!-- 星星 -->
-
-        </view>
+      <block wx:for="{{post_key.movies}}" wx:for-item="top" wx:for-index="idx" wx:key="idx" wx:if="{{idx<3}}">
+             <template is="movetemplate" data='{{top:top,idx:idx}}' />
         </block>
-   
-    </view>
+
+        <template is="movelist" data='{{itm:post_key_jj}}' />
+
+       <block wx:for="{{post_key_jj.movies}}" wx:for-item="top" wx:for-index="idx" wx:key="idx" wx:if="{{idx<3}}">
+             <template is="movetemplate" data='{{top:top,idx:idx}}' />
+        </block>
+
+          <template is="movelist" data='{{itm:post_key_top}}' />
+
+      <block wx:for="{{post_key_top.movies}}" wx:for-item="top" wx:for-index="idx" wx:key="idx" wx:if="{{idx<3}}">
+             <template is="movetemplate" data='{{top:top,idx:idx}}' />
+        </block>
+       </view>
+       <view wx:if="{{!conshow}}">
+                <block wx:for="{{seach.movies}}" wx:for-item="top" wx:for-index="idx" wx:key="idx">
+             <template is="movetemplate" data='{{top:top,idx:idx}}' />
+        </block>
+       </view>  
 </view>

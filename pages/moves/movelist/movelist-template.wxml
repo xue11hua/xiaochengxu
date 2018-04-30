@@ -1,0 +1,10 @@
+<!-- 头部 -->
+<template name='movelist'>
+<view class='movelist_c'>
+        <text class='movelist_a'>{{itm.categoryTitle}}</text> 
+        <view class='movelist_b' catchtap='onmovetap' data-title="{{itm.categoryTitle}}">
+          <text>更多</text>
+          <image class='movelist_img' src='../../../images/icon/arrow-right.png'></image>
+        </view>
+      </view>
+</template >

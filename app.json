@@ -3,7 +3,8 @@
     "pages/moves/moves",
     "pages/wekcone/index/index",
     "pages/posts/posts",
-    "pages/posts/post-detal/post-detal"
+    "pages/posts/post-detal/post-detal",
+    "pages/moves/more-move/more-move"
    
    
   ],
@@ -14,6 +15,7 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
+   
   },
   "tabBar": {
     "borderStyle": "white",

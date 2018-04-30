@@ -1,0 +1,6 @@
+<import src='../move/move-template.wxml' />
+<view  class='movegd'>
+  <block wx:for="{{post_key}}" wx:for-item="top" wx:for-index="idx" wx:key="idx">
+             <template is="movetemplate" data='{{top:top,idx:idx}}' />
+        </block>
+</view>

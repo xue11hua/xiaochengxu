@@ -1,11 +1,14 @@
+
 <import src='../stars/stars.wxml' />
-<!-- //引用模版 -->
 <template name='movetemplate'>
-    <view class='m_a'>
-      <view class='m_b'>
-           <image class='m_img' src='/images/tou.jpg'></image>
-           <text class='m_text'>你的名字</text>
-      </view>
-      <template is='stars'></template>
-    </view>
+       <!-- 列表内容 -->
+      <view class='m_a'>
+          <view class='m_b'>
+              <image class='m_img' src='{{top.images.large}}'></image>
+              <text class='m_text'>{{top.title}}</text>
+          </view> 
+          <!-- 星星 -->
+           <template is="stars" data='{{top}}' />
+
+        </view>
 </template>

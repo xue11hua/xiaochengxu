@@ -6,6 +6,7 @@
  height: 70rpx;
  line-height: 70rpx;
  text-indent: 5px;
+ clear: both
 }
 .movelist_b .movelist_img{
   width: 20rpx;
