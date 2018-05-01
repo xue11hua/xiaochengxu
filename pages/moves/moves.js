@@ -1,7 +1,8 @@
 var postdata = require('../../ntils/xx.js')//引入js只能用相对路径
 Page({
   data: {
-    conshow:true
+    conshow:true,
+    key:'血战钢锯岭'
   },
   onLoad: function (options) {
 
@@ -54,17 +55,21 @@ Page({
   onBindBlur: function (event){
     this.setData({
       conshow: true,
-      seach:{}
+      seach: {},
+      key:''
     })
+    
    
   },
   onBindChan:function(event){
     var inputz = event.detail.value;
     this.shuju("/v2/movie/search?q="+inputz, "seach", "");
+    
     this.setData({
       conshow: false
     })
       
-  }
+  },
+  
   
 })

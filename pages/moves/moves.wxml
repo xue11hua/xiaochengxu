@@ -1,11 +1,16 @@
 <import src='move/move-template.wxml' />
 <import src='movelist/movelist-template.wxml' />
 <view>
+
       <view class="search">
         <icon class="search-img" type='search' size='13' color='#405f80'></icon>
-        <input placeholder="血战钢锯岭、你的名字"  type='text'  placeholder-class="placeholder" bindfocus="onBindFocus"  bindconfirm="onBindChan" />
-        <image wx:if="{{!conshow}}" src="/images/icon/xx.png" class="xx-img" catchtap="onBindBlur"></image>
+        <input  type='text'  placeholder-class="placeholder" bindfocus="onBindFocus"  bindconfirm="onBindChan" value='{{key}}' />
+        <view catchtap="onBindBlur" class='search_btn'>
+              <image wx:if="{{!conshow}}" src="/images/icon/xx.png" class="xx-img"></image>
+        </view>
       </view>
+
+
       <view wx:if="{{conshow}}">
       <template is="movelist" data='{{itm:post_key}}' />
 

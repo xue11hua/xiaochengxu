@@ -60,6 +60,7 @@ Page({
       inplay: true
     })
   }
+
     
   },
   onsctap:function(){
@@ -114,6 +115,7 @@ onfxtap:function(){
 },
 onbftap:function(){
   var inplay=this.data.inplay;
+  var thas=this;
   if(inplay){
     wx.pauseBackgroundAudio();//音乐停止
     this.setData({
@@ -134,6 +136,13 @@ onbftap:function(){
       coverImgUrl: postdata.postlist[this.data.id].coverImg,
     })
   }
+  wx.onBackgroundAudioStop(function(){
+    thas.setData({
+      inplay: false
+    })
+    app.gloabdata.g_inplay = false;
+    app.gloabdata.g_dj = null;
+  })
  
 
 }

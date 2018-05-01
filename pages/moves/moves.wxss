@@ -29,5 +29,13 @@
 .xx-img{
     height: 30rpx;
     width: 30rpx;
-    margin:auto 0 auto 10rpx;
+     margin:20rpx 0 auto 10rpx; 
+     vertical-align: middle
+     
+}
+.search_btn{
+  display: inline-block;
+  width: 100rpx;
+  text-align: center;
+
 }
