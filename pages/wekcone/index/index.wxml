@@ -1,7 +1,7 @@
 
 <view class='container'>
-  <image class='user' src='/images/tou.jpg'></image>
-  <text class='name'>你好我</text>
+  <image class='user' src='{{userInfoAvatar}}'></image>
+  <text class='name'>你好 {{nickName}}</text>
   <view class='moto' catchtap="ontap">
       <text class='namea'>开始</text>
   </view>

@@ -39,6 +39,7 @@ Page({
         that.setData(readydata);//设置data数据
       }
     })
+    wx.hideNavigationBarLoading();
   },
   onmovetap:function(event){
     var title = event.currentTarget.dataset.title;//获取postid
@@ -63,13 +64,22 @@ Page({
   },
   onBindChan:function(event){
     var inputz = event.detail.value;
+    wx.showNavigationBarLoading();
     this.shuju("/v2/movie/search?q="+inputz, "seach", "");
     
     this.setData({
       conshow: false
     })
+
+   
       
   },
-  
+  xingqing:function(event){
+    var id = event.currentTarget.dataset.id;//获取postid
+    wx.navigateTo({
+      url: 'move-detal/move-detal?id='+id,
+     
+    })
+  }
   
 })

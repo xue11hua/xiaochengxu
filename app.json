@@ -1,10 +1,11 @@
 {
   "pages": [
-    "pages/moves/moves",
     "pages/wekcone/index/index",
+    "pages/moves/moves",
     "pages/posts/posts",
     "pages/posts/post-detal/post-detal",
-    "pages/moves/more-move/more-move"
+    "pages/moves/more-move/more-move",
+    "pages/moves/move-detal/move-detal"
    
    
   ],

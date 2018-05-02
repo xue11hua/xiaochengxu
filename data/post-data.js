@@ -1,10 +1,10 @@
 var post = [
   {
     date: '2018.1.2',
-    title: '啦啦啦啦啦啦',
+    title: '正是虾肥蟹壮时',
 
     post_img: '/images/1.jpg',
-    post_imga: '/images/banner.jpg',
+    post_imga: '/images/post/crab.png',
 
     con: '润肤if还是符合实际开发和萨科夫',
     xiangqiang:'0防火防盗和发动机防盗防大风后方基地和发动机思考的角度洒洒',
@@ -20,7 +20,7 @@ var post = [
     title: '啦啦啦啦啦啦',
 
     post_img: '/images/1.jpg',
-    post_imga: '/images/banner.jpg',
+    post_imga: '/images/post/bl.png',
 
     con: '润肤if还是符合实际开发和萨科夫',
     xiangqiang: '1防火防盗和发动机防盗防大风后方基地和发动机思考的角度洒洒',
@@ -36,7 +36,7 @@ var post = [
     title: '啦啦啦啦啦啦',
 
     post_img: '/images/1.jpg',
-    post_imga: '/images/banner.jpg',
+    post_imga: '/images/post/sls.jpg',
 
     con: '润肤if还是符合实际开发和萨科夫',
     xiangqiang: '2防火防盗和发动机防盗防大风后方基地和发动机思考的角度洒洒',
@@ -51,7 +51,7 @@ var post = [
     title: '啦啦啦啦啦啦',
 
     post_img: '/images/1.jpg',
-    post_imga: '/images/banner.jpg',
+    post_imga: '/images/post/xiaolong.jpg',
 
     con: '润肤if还是符合实际开发和萨科夫',
     xiangqiang: '3防火防盗和发动机防盗防大风后方基地和发动机思考的角度洒洒',
@@ -66,7 +66,7 @@ var post = [
     title: '啦啦啦啦啦啦',
 
     post_img: '/images/1.jpg',
-    post_imga: '/images/banner.jpg',
+    post_imga: '/images/post/vr.png',
 
     con: '润肤if还是符合实际开发和萨科夫',
     xiangqiang: '4防火防盗和发动机防盗防大风后方基地和发动机思考的角度洒洒',

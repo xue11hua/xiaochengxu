@@ -2,7 +2,7 @@
 <import src='../stars/stars.wxml' />
 <template name='movetemplate'>
        <!-- 列表内容 -->
-      <view class='m_a'>
+      <view class='m_a' catchtap='xingqing'  data-id="{{top.id}}">
           <view class='m_b'>
               <image class='m_img' src='{{top.images.large}}'></image>
               <text class='m_text'>{{top.title}}</text>

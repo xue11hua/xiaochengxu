@@ -77,6 +77,14 @@ Page({
     this.data.post_key='';
     this.data.total=0;
     this.shuju(this.data.requestUrl); 
+    wx.stopPullDownRefresh()
+  },
+  xingqing: function (event) {
+    var id = event.currentTarget.dataset.id;//获取postid
+    wx.navigateTo({
+      url: '../move-detal/move-detal?id=' + id,
+
+    })
   }
 
 })
